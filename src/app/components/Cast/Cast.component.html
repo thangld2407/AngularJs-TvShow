@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Date of birth</th>
+      <th>Character</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- {{cast.person}} -->
+    <tr *ngFor="let c of cast; index as i">
+      <th>{{i + 1}}</th>
+      <td>{{c.person.name}}</td>
+      <td>{{c.person.birthday}}</td>
+      <td>{{c.character.name}}</td>
+    </tr>
+  </tbody>
+</table>
